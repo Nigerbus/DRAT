@@ -1,0 +1,9 @@
+colorama 
+discord==2.0.0
+asyncio
+requests
+pyautogui
+pywin32
+psutil
+opencv-python
+wmi
